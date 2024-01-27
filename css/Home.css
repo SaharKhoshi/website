@@ -41,6 +41,7 @@ h1, p{margin-left: 10px;}
 .section{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     height: 550px;
 }
 img{
@@ -74,7 +75,7 @@ div{
     border-right: 0px;
 }
 #input:active{
-    width: 200PX;
+    width: 200px;
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
@@ -83,4 +84,50 @@ ul{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+@media(min-width: 360px) and (max-width: 778px){
+.nav{
+    display: flex;
+    flex-direction: column;
+}
+.article{
+    width: 350px;
+    margin-left: 5% auto;
+    margin-right: 5% auto;
+}
+.p1{
+    display: none;
+}
+.section{
+    margin: 5% auto;
+    width: 360px;
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+div{
+    width: 340px;
+
+}
+.footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+}
+}
+@media(min-width: 778px) and (max-width: 1155px){
+.section{
+    height: 1000px;
+}
 }
